@@ -22,8 +22,8 @@ function App() {
 
       {/* Foreground Content */}
       <div className="content">
-        <h1>Hello, I'm Stephen 👋</h1>
-        <p>Welcome to my portfolio site.</p>
+        <h1>STEPHEN MARTINEZ</h1>
+        <p>Full Stack Web Developer | Software Engineer | React & Angular</p>
       </div>
     </div>
    </> 
