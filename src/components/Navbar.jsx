@@ -1,7 +1,7 @@
 // src/components/Navbar.jsx
 import React, { useState } from "react";
 import "./Navbar.css";
-import logo from "/public/images/logo.png"; // adjust if needed
+import logo from "../assets/images/logo.png"; // adjust if needed
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

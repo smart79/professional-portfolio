@@ -2,6 +2,8 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./components/Navbar";
+import backgroundVideo from "./assets/videos/background.mp4";
+
 
 function App() {
   return (
@@ -10,15 +12,15 @@ function App() {
     <div className="App">
       {/* Background Video */}
       <video
-        className="background-video"
-        autoPlay
-        loop
-        muted
-        playsInline
-      >
-        <source src="/videos/background.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+          className="background-video"
+          autoPlay
+          loop
+          muted
+          playsInline
+        >
+          <source src={backgroundVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
       {/* Foreground Content */}
       <div className="content">
