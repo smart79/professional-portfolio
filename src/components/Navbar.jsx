@@ -9,14 +9,17 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Top Left: Floating Logo */}
+      {/* Floating Logo (Top Left) */}
       <div className="floating-logo">
         <img src={logo} alt="Stephen Logo" />
       </div>
 
-      {/* Top Right: Menu Toggle */}
+      {/* Floating Toggle + Menu (Top Right) */}
       <div className="floating-menu-toggle">
-        <button className={`menu-toggle ${isOpen ? "open" : ""}`} onClick={toggleMenu}>
+        <button
+          className={`menu-toggle ${isOpen ? "open" : ""}`}
+          onClick={toggleMenu}
+        >
           <span className="bar top-bar"></span>
           <span className="bar middle-bar"></span>
           <span className="bar bottom-bar"></span>
@@ -24,9 +27,15 @@ const Navbar = () => {
 
         <div className={`radial-menu ${isOpen ? "active" : ""}`}>
           <ul>
-            <li style={{ '--i': 0 }}><a href="#projects" onClick={toggleMenu}>Projects</a></li>
-            <li style={{ '--i': 1 }}><a href="#about" onClick={toggleMenu}>About</a></li>
-            <li style={{ '--i': 2 }}><a href="#contact" onClick={toggleMenu}>Contact</a></li>
+            <li style={{ "--angle": "-45deg", "--distance": "80px" }}>
+              <a href="#projects" onClick={toggleMenu}>Projects</a>
+            </li>
+            <li style={{ "--angle": "0deg", "--distance": "80px" }}>
+              <a href="#about" onClick={toggleMenu}>About</a>
+            </li>
+            <li style={{ "--angle": "45deg", "--distance": "80px" }}>
+              <a href="#contact" onClick={toggleMenu}>Contact</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -35,6 +44,7 @@ const Navbar = () => {
 };
 
 export default Navbar;
+
 
 
 
