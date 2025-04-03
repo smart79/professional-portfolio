@@ -1,0 +1,36 @@
+.custom-cursor {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: radial-gradient(circle, #ff0033 0%, #cc0022 60%, transparent 100%);
+    pointer-events: none;
+    position: fixed;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    mix-blend-mode: screen;
+    box-shadow: 0 0 14px rgba(255, 0, 60, 0.85);
+    box-shadow: 0 0 8px rgba(255, 0, 60, 0.6), 0 0 20px rgba(255, 0, 80, 0.5);
+
+  }
+  .custom-cursor.hovered {
+    transform: translate(-50%, -50%) scale(3);
+    background: radial-gradient(circle, rgba(255, 0, 60, 1) 0%, rgba(255, 0, 60, 0.9) 75%);
+    box-shadow:
+    0 0 8px rgba(255, 0, 60, 0.6),
+    0 0 15px rgba(255, 0, 60, 0.4),
+    0 0 30px rgba(255, 0, 60, 0.2);
+  }
+  .cursor-trail {
+    width: 2px;
+    height: 2px;
+    border-radius: 50%;
+    background-color: rgba(255, 0, 51, 0.8); /* less pink, more red */
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    z-index: 9998;
+    mix-blend-mode: screen;
+    transition: opacity .2s ease-out;
+  }
+  
+  

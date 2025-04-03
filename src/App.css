@@ -65,6 +65,7 @@
 .content {
   font-family: 'Orbitron', sans-serif;
   color: whitesmoke;
+  font-size: 2rem;
   text-align: center;
   z-index: 1;
   text-shadow:
