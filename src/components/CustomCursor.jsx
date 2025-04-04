@@ -9,11 +9,11 @@ const CustomCursor = () => {
 
   useEffect(() => {
     const cursor = cursorRef.current;
-    const trailLength = 100;
+
     let mouseX = 0,
         mouseY = 0;
     let isMoving = false;
-    let scale = 1; // ✅ NEW: controls cursor scale
+    let scale = 1; //controls cursor scale
   
     // Initialize trail positions and DOM elements
     const trailPositions = Array.from({ length: trailLength }, () => ({ x: 0, y: 0 }));
@@ -64,7 +64,7 @@ const CustomCursor = () => {
   
     //Grow/shrink functions now just adjust scale
     const growCursor = () => {
-      scale = 10;
+      scale = 3;
     };
     const shrinkCursor = () => {
       scale = 1;
