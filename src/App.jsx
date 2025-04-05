@@ -29,6 +29,7 @@ function App() {
         <h1>STEPHEN MARTINEZ</h1>
         <p>Full Stack Web Developer | Software Engineer | React & Angular</p>
       </div>
+      
     </div>
    </> 
   );
